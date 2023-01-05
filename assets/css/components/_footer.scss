@@ -1,0 +1,95 @@
+.footer {
+    &Box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 60px;
+        &__flex {
+            display: flex;
+            align-items: center;
+        }
+        &__company {
+            &-title {
+                font-family: "Poppins", sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 27px;
+                color: #000;
+                margin-bottom: 18px;
+            }
+
+            &-sosial {
+                border-radius: 50%;
+                background-color: black;
+                height: 32px;
+                width: 32px;
+                margin-right: 10px;
+
+                img {
+                    padding: 8px;
+                }
+            }
+
+            &-list {
+                list-style: none;
+                li {
+                    display: block;
+                    margin-bottom: 16px;
+                    a {
+                        color: #999fae;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &Copy {
+        margin-top: 60px;
+        border-top: 1px solid #999fae;
+
+        &Box {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__text {
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+
+                color: #000;
+                line-height: 21px;
+            }
+        }
+    }
+    @media only screen and (max-width: 1200px) {
+    
+        .footer {
+            &Box {
+                display: block;
+                text-align: center;
+                &__logo {
+                    margin-bottom: 20px;
+                }
+    
+                &__flex {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        &CopyBox__text {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

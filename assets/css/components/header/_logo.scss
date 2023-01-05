@@ -1,0 +1,19 @@
+.header__box-logo {
+    display: flex;
+    align-items: center;
+    margin: 0 60px 0 0;
+
+    .navbar{
+        margin-right: 30px;
+        cursor: pointer;
+        img{
+            width: 20px;
+            height: 11px;
+        }
+    }
+
+    img {
+        width: 240px;
+        height: 42px;
+    }
+}

@@ -1,0 +1,94 @@
+.checkpoint {
+    width: 350px;
+    background-color: #f3f3f3;
+    height: 405px;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+    &__title {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        color: #000;
+    }
+
+    &__subtitle {
+        font-family: Poppins;
+        font-size: 14px;
+        line-height: 21px;
+        color: #7d7d7d;
+        cursor: pointer;
+    }
+
+    &__line {
+        height: 1px;
+        margin: 29px 0 10px;
+        background-color: #c4c4c4;
+    }
+    &__form {
+        margin: 20px 0 0;
+        &-group{
+            select{
+                background: #fff !important;
+            }
+        }
+
+        &-group-submit {
+            margin-top: 20px;
+            input {
+                background-color: #e3472b;
+                color: #fff;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+                width: 100%;
+                text-align: center;
+                height: 48px;
+                border-radius: 10px;
+                padding: 10px;
+                cursor: pointer;
+                border: 1px solid transparent;
+            }
+        }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        &-title {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            color: #99999a;
+        }
+
+        &-price {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            color: #000000;
+        }
+
+        &-total {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            color: #e3472b;
+        }
+    }
+
+
+    @media screen and (max-width:1100px) {
+        &{
+          height: auto;
+        }
+    }
+}

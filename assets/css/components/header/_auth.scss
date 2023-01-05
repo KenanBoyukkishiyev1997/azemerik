@@ -1,0 +1,66 @@
+.header__auth {
+    display: flex;
+    align-items: center;
+    &-user {
+        margin-right: 27px;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 16px;
+        }
+        span {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #000;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    &-shopCard {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        span {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #000;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &:hover{
+            text-decoration: none;
+        }
+        &Box {
+            position: relative;
+            span {
+                position: absolute;
+                right: 10px;
+                top: -7px;
+                background-color: #e3472b;
+                border-radius: 50%;
+                font-family: "Poppins", sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+                text-align: center;
+                color: #ffffff;
+                padding: 0px 6px;
+            }
+            img {
+                margin-right: 18px;
+            }
+        }
+    }
+}

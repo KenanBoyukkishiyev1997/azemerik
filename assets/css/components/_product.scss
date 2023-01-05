@@ -1,0 +1,89 @@
+.product {
+    position: relative;
+    margin-bottom: 30px;
+    &__flex {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    &__box {
+        width: 301px;
+        border: 1px solid #d4d4d4;
+        border-radius: 2px;
+        padding: 18px 16px;
+        margin-bottom: 20px;
+        &-position {
+            position: relative;
+        }
+
+        &-link{
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;  
+            }
+        }
+
+        &-new {
+            font-family: "Poppins", sans-serif;
+            position: absolute;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 21px;
+            letter-spacing: 0px;
+            text-align: left;
+            left: 0;
+            width: 49px;
+            height: 23px;
+            padding: 1px 9px;
+            border-radius: 4px;
+            color: #fff;
+            background: #e3472b;
+            top: 0;
+        }
+
+        &-icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        &-img {
+            width: 160px;
+            height: 157px;
+            border-radius: 8px;
+            display: flex;
+            margin: auto;
+            margin-top: 7px;
+        }
+        &-title {
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 21px;
+            color: #1a1b68;
+            margin: 16px 0 11px;
+        }
+
+        &-subTitle {
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            color: #1a1b68;
+            margin-bottom: 10px;
+        }
+
+        &-price {
+            margin-top: 25px;
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #1a1b68;
+
+        }
+    }
+}

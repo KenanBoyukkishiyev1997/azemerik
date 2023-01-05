@@ -1,0 +1,98 @@
+@import "./whyUs";
+@import "./commit";
+
+.about {
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 550px;
+        p {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            color: #9a9a99;
+        }
+    }
+    &__right {
+        width: 610px;
+   
+
+        &-box{
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 36px;
+            
+                &:not(:last-child){
+                    padding-top: 10px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                }
+          
+
+            &-img {
+                margin-right: 40px;
+                width: 60px;
+                height: 60px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+    
+            &-title {
+                margin-right: 75px;
+                font-family: Poppins;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 72px;
+                margin-bottom: 30px;
+
+                color: #000;
+            }
+    
+            &-info{
+                margin-bottom: 30px;
+
+                font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #A0A0A0;
+            }
+        }
+      
+    }
+
+    @media only screen and (max-width:1300px) {
+        &__flex {
+            display: block;
+        }
+        &__left,
+        &__right{
+            width: 100%;
+        }
+
+        &__left{
+            p{
+                text-align: center;
+            }
+        }
+
+        &__right-box{
+            justify-content: center;
+        }
+    }
+
+    @media only screen and (max-width:600px) {
+        &__right-box{
+            display: block;
+            text-align: center;
+
+            &-img,
+            &-title{
+margin: 10px 0;
+            }
+        }
+    }
+}

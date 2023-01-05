@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Azmerika LLC</title>
+    <!-- Meta Data        -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0 shrink-to-fit=no"
+    />
+    <!-- Favicons-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Theme style-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body class="wrapper">
+    <!-- ////Header Start//// -->
+    <header class="header">
+      <div class="contaniar">
+        <div class="header__box">
+          <div class="header__box-logo">
+            <div class="navbar" onclick="openNav()">
+              <img src="./assets/images/svg/navbar.svg" alt="" />
+            </div>
+          <a href="index.html"> <img src="./assets/images/logoaz.png" alt="azmerika logo" /></a> 
+          </div>
+          <div class="header__search">
+            <form action="">
+              <div class="header__search-group">
+                <div class="header__search-groupSearch">
+                  <input
+                    type="text"
+                    placeholder="Sizə hansı məhsulu tapmağa yardımçı ola bilərik?"
+                  />
+                  <button class="submit" type="submit">
+                    <img src="./assets/images/svg/search.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="header__auth">
+            <div class="header__auth-user">
+              <img src="./assets/images/svg/user.svg" alt="" />
+              <span>Daxil ol</span>
+            </div>
+
+            <div class="header__auth-shopCard">
+              <span class="header__auth-shopCardBox">
+                <span>2</span>
+                <img src="./assets/images/svg/shopCard.svg" alt="" />
+              </span>
+              <span>Səbət</span>
+
+              <div class="brator-cart-item-list">
+                <div class="brator-cart-item-list-header">
+                  <h2>Cart<span> (5 items)</span></h2>
+                  <button class="brator-cart-close closeCart">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="brator-cart-item-list-item">
+                  <div class="brator-cart-item-list-item-img">
+                    <a href="#_"
+                      ><img
+                        class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="assets/images/cart-01.jpg"
+                        alt="alt"
+                    /></a>
+                  </div>
+                  <div class="brator-cart-item-list-item-title">
+                    <div class="brator-cart-item-list-item-title-one">
+                      <a href="#_">
+                        <h2>Silver with Mirror Cut<br />Face Wheels</h2>
+                      </a>
+                      <div class="price-pdo">
+                        <h4>4</h4>
+                        <h5>x</h5>
+                        <h6><span>$21.99</span><span>$26.99</span></h6>
+                      </div>
+                    </div>
+                    <div class="brator-cart-item-list-item-title-accetion">
+                      <p>19” DIAMETER, White/Sliver</p>
+                      <div
+                        class="brator-cart-item-list-item-title-accetion-part"
+                      >
+                        <button class="cart-item-close">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="brator-cart-item-list-item">
+                  <div class="brator-cart-item-list-item-img">
+                    <img
+                      class="lazyload"
+                      src="./assets/images/product/product-1.png"
+                      alt="alt"
+                    />
+                  </div>
+                  <div class="brator-cart-item-list-item-title">
+                    <div class="brator-cart-item-list-item-title-one">
+                      <a href="#_">
+                        <h2>Automatic Proshift<br />Shift Knob</h2>
+                      </a>
+                      <div class="price-pdo">
+                        <h4>4</h4>
+                        <h5>x</h5>
+                        <h6><span>$21.99</span><span>$26.99</span></h6>
+                      </div>
+                    </div>
+                    <div class="brator-cart-item-list-item-title-accetion">
+                      <p>19” DIAMETER, White/Sliver</p>
+                      <div
+                        class="brator-cart-item-list-item-title-accetion-part"
+                      >
+                        <button class="cart-item-close">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="brator-cart-item-list-money-area">
+                  <div class="brator-cart-item-money">
+                    <span>Total before discount</span><span>$843.19</span>
+                  </div>
+                  <div class="brator-cart-item-money discount-me">
+                    <span>Discount</span><span>- $5.00</span>
+                  </div>
+                  <div class="brator-cart-item-money">
+                    <span>Subtotal</span><span>$838.19</span>
+                  </div>
+                </div>
+                <div class="brator-cart-total-money">
+                  <div class="brator-cart-total-header">
+                    <span>total</span><span>$838.19</span>
+                  </div>
+                  <div class="brator-cart-total-action">
+                    <a href="#_">View Cart</a><a href="#_">Checkout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="headerMob" id="myNav">
+        <a href="index.html"> <img src="./assets/images/logoaz.png" alt="azmerika logo" /></a> 
+
+        <div class="headerMob__close" onclick="closeNav()">x</div>
+
+        <ul class="headerMob__list">
+          <li><a href="#">Haqqımızda</a></li>
+          <li><a href="#">Karyera</a></li>
+          <li>
+            <a class="headerMob__mega" href="#"
+              >AboutParts <i class="down fa fa-sort-down"></i
+            ></a>
+            <div class="mega-menu-areaNav d-none">
+              <div class="mega-menu-cat-list">
+                <div
+                  class="mega-menu-cat-list-left mega-menu-cat-list-single-area"
+                >
+                  <a href="#_"
+                    ><img
+                      src="./assets/images/product/product-1.png"
+                      alt="alt"
+                    /><span>Auto Parts</span></a
+                  ><a href="#_"
+                    ><img src="assets/images/mega-menu-09.jpg" alt="alt" /><span
+                      >Car Care</span
+                    ></a
+                  ><a href="#_"
+                    ><img src="assets/images/mega-menu-02.jpg" alt="alt" /><span
+                      >Performance</span
+                    ></a
+                  ><a href="#_"
+                    ><img src="assets/images/mega-menu-03.jpg" alt="alt" /><span
+                      >Wheels &amp; Tires</span
+                    ></a
+                  ><a href="#_"
+                    ><img src="assets/images/mega-menu-04.jpg" alt="alt" /><span
+                      >Exteriors</span
+                    ></a
+                  >
+                </div>
+                <div
+                  class="mega-menu-cat-list-mdl mega-menu-cat-list-single-area"
+                >
+                  <a href="#_"
+                    ><img src="assets/images/mega-menu-05.jpg" alt="alt" /><span
+                      >Interiors</span
+                    ></a
+                  ><a href="#_"
+                    ><img src="assets/images/mega-menu-06.jpg" alt="alt" /><span
+                      >Entertaiments</span
+                    ></a
+                  ><a href="#_"
+                    ><img src="assets/images/mega-menu-07.jpg" alt="alt" /><span
+                      >Exhaust System</span
+                    ></a
+                  ><a href="#_"
+                    ><img src="assets/images/mega-menu-08.jpg" alt="alt" /><span
+                      >Custom Wheels</span
+                    ></a
+                  >
+                </div>
+                <div
+                  class="mega-menu-cat-list-end mega-menu-cat-list-single-area"
+                >
+                  <a href="#_"
+                    ><img src="assets/images/mega-menu-10.jpg" alt="alt" /><span
+                      >Fluids &amp; Chemicals</span
+                    ></a
+                  ><a href="#_"
+                    ><img src="assets/images/mega-menu-11.jpg" alt="alt" /><span
+                      >Tools &amp; Supplies</span
+                    ></a
+                  ><a href="#_"
+                    ><img src="assets/images/mega-menu-12.jpg" alt="alt" /><span
+                      >Wipers &amp; Washers</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="#">Xəbərlər</a></li>
+          <li><a href="#">Kateqoriyalar</a></li>
+          <li><a href="#">Məhsullar</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <nav class="nav d-none">
+      <div class="contaniar">
+        <ul class="nav__list">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li class="nav__megaMenu">
+            <a href="#">AboutParts</a>
+            <div class="mega-menu-area">
+              <div class="mega-menu-cat-list">
+                <div
+                  class="mega-menu-cat-list-left mega-menu-cat-list-single-area"
+                >
+                  <a href="">
+                    <img
+                      src="./assets/images/product/product-1.png"
+                      alt=""
+                    /><span>Auto Parts</span></a
+                  >
+                  <a href="">
+                    <img
+                      src="./assets/images/product/product-1.png"
+                      alt=""
+                    /><span>Auto Parts</span></a
+                  >
+                </div>
+                <div class="mega-menu-cat-list-single-area">
+                  <a href="">
+                    <img
+                      src="./assets/images/product/product-1.png"
+                      alt=""
+                    /><span>Auto Parts</span></a
+                  >
+                  <a href="">
+                    <img
+                      src="./assets/images/product/product-1.png"
+                      alt=""
+                    /><span>Auto Parts</span></a
+                  >
+                </div>
+
+                <div class="mega-menu-cat-list-single-area">
+                  <a href="">
+                    <img
+                      src="./assets/images/product/product-1.png"
+                      alt=""
+                    /><span>Auto Parts</span></a
+                  >
+                </div>
+              </div>
+
+              <div class="mega-menu-offer">
+                <div
+                  class="brator-offer-box-two lazyloaded"
+                  style="
+                    background-image: url('assets/images/offer/offer-02.png');
+                  "
+                >
+                  <div class="budget-area"><span>mega bundle</span></div>
+                  <h2>Helix Engine Fluids</h2>
+                  <p>Pack 3pcs just:</p>
+                  <h6><span>$89.90</span><span>$250.80</span></h6>
+                  <a href="shop-sub-category.html">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="">BlogPages</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ////Header End//// -->
+
+    <!-- ////Banner Start//// -->
+
+    <section class="banner">
+      <div class="contaniar">
+        <ul class="banner__list">
+          <li class="banner__list-item">
+            <a href="#"
+              ><img src="./assets/images/banner/banner1.png" alt=""
+            /></a>
+          </li>
+          <li class="banner__list-item">
+            <a href="#"
+              ><img src="./assets/images/banner/banner2.png" alt=""
+            /></a>
+          </li>
+          <li class="banner__list-item">
+            <a href="#"
+              ><img src="./assets/images/banner/banner3.png" alt=""
+            /></a>
+          </li>
+          <li class="banner__list-item">
+            <a href="#"
+              ><img src="./assets/images/banner/banner4.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ////Banner End//// -->
+
+    <!-- ////Navbar Side Start//// -->
+
+    <section class="navbarSide">
+      <div class="contaniar">
+        <div class="navbarSide__box">
+          <ul class="navbarSide__list">
+            <li class="navbarSide__item">
+              <a class="navbarSide__link" href="#">Haqqımızda</a>
+            </li>
+            <li class="navbarSide__item">
+              <a class="navbarSide__link" href="#">Müştəri Xidmətləri</a>
+            </li>
+          </ul>
+          <div class="navbarSide__box-info">
+            <a href="#"
+              ><img src="./assets/images/svg/marker.svg" alt="" /> Sizə yaxın
+              satış nöqtələri</a
+            >
+            <a href="#"
+              ><img src="./assets/images/svg/shopBasket.svg" alt="" /> Sizə
+              yaxın satış nöqtələri</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="heroBanner">
+      <div class="contaniar">
+        <!-- <h1 class="heroBanner__title">About Azmerika</h1>
+        <p class="heroBanner__text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p> -->
+
+        <ul class="heroBanner__list">
+          <li><a href="#">Əsas</a></li>
+          <li><a href="#">Kateqoriya</a></li>
+          <li><a href="#">Sub kateqoriya</a></li>
+          <li><span>Sub sub kateqoriya</span></li>
+        </ul>
+        <h4>Səhifənin adı</h4>
+      </div>
+    </div>
+    <!-- ////Navbar Side End//// -->
+    <section class="about">
+      <div class="contaniar">
+        <div class="headline">
+          <div class="headline__box">
+            <span class="headline__box-borderLeft"></span>
+            <h1 class="headline__box-title">Haqqımızda</h1>
+          </div>
+        </div>
+        <div class="about__flex">
+          <div class="about__left">
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet.
+            </p>
+          </div>
+
+          <div class="about__right">
+            <div class="about__right-box">
+              <img
+                class="about__right-box-img"
+                src="./assets/images/blog/blog-1.png"
+                alt=""
+              />
+
+              <h1 class="about__right-box-title">1.7M+</h1>
+
+              <span href="#" class="about__right-box-info"
+                >Orders Served Success</span
+              >
+            </div>
+
+            <div class="about__right-box">
+              <img
+                class="about__right-box-img"
+                src="./assets/images/blog/blog-1.png"
+                alt=""
+              />
+
+              <h1 class="about__right-box-title">1.7M+</h1>
+
+              <span href="#" class="about__right-box-info"
+                >Orders Served Success</span
+              >
+            </div>
+            <div class="about__right-box">
+              <img
+                class="about__right-box-img"
+                src="./assets/images/blog/blog-1.png"
+                alt=""
+              />
+
+              <h1 class="about__right-box-title">1.7M+</h1>
+
+              <span href="#" class="about__right-box-info"
+                >Orders Served Success</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="whyus">
+      <div class="contaniar">
+        <div class="headline">
+          <div class="headline__box">
+            <span class="headline__box-borderLeft"></span>
+            <h1 class="headline__box-title">Niyə Azmerika?</h1>
+          </div>
+        </div>
+        <div class="whyus__flex">
+          <div class="whyus__box">
+            <img
+              src="./assets/images/blog/blog-1.png"
+              alt=""
+              class="whyus__box-img"
+            />
+            <h1 class="whyus__box-title">Affordable Prices & Promotions</h1>
+            <p class="whyus__box-desc">
+              We aim provide the highest quality products at the lowest prices
+              possible and much promotions
+            </p>
+          </div>
+
+          <div class="whyus__box">
+            <img
+              src="./assets/images/blog/blog-1.png"
+              alt=""
+              class="whyus__box-img"
+            />
+            <h1 class="whyus__box-title">Affordable Prices & Promotions</h1>
+            <p class="whyus__box-desc">
+              We aim provide the highest quality products at the lowest prices
+              possible and much promotions
+            </p>
+          </div>
+
+          <div class="whyus__box">
+            <img
+              src="./assets/images/blog/blog-1.png"
+              alt=""
+              class="whyus__box-img"
+            />
+            <h1 class="whyus__box-title">Affordable Prices & Promotions</h1>
+            <p class="whyus__box-desc">
+              We aim provide the highest quality products at the lowest prices
+              possible and much promotions
+            </p>
+          </div>
+
+          <div class="whyus__box">
+            <img
+              src="./assets/images/blog/blog-1.png"
+              alt=""
+              class="whyus__box-img"
+            />
+            <h1 class="whyus__box-title">Affordable Prices & Promotions</h1>
+            <p class="whyus__box-desc">
+              We aim provide the highest quality products at the lowest prices
+              possible and much promotions
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="commit">
+      <div class="contaniar">
+        <div class="headline">
+          <div class="headline__box">
+            <span class="headline__box-borderLeft"></span>
+            <h1 class="headline__box-title">9K+ Customers Love Azmerika</h1>
+          </div>
+        </div>
+        <div class="commit__flex">
+          <div class="commit__box">
+            <div class="commit__box-bg">
+              <h1 class="commit__box-title">
+                World of car spares, I found it!
+              </h1>
+              <p class="commit__box-desc">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+            </div>
+            <div class="commit__box-person">
+              <img
+                src="./assets/images/person/person1.png"
+                alt=""
+                class="commit__box-img"
+              />
+              <div class="commit__box-info">
+                <h1 class="commit__box-name">Saadat Abilova</h1>
+                <span class="commi__box-position">
+                  Designer at<a href="" class="commit__box-link">
+                    Customar</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="commit__box">
+            <div class="commit__box-bg">
+              <h1 class="commit__box-title">
+                World of car spares, I found it!
+              </h1>
+              <p class="commit__box-desc">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+            </div>
+            <div class="commit__box-person">
+              <img
+                src="./assets/images/person/person1.png"
+                alt=""
+                class="commit__box-img"
+              />
+              <div class="commit__box-info">
+                <h1 class="commit__box-name">Saadat Abilova</h1>
+                <span class="commi__box-position">
+                  Designer at<a href="" class="commit__box-link">
+                    Customar</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="joinUs">
+      <div class="joinUs__box">
+        <h1 class="joinUs__box-title">Bizə Qoşul</h1>
+        <div class="joinUs__box-sosialMedia">
+          <div class="joinUs__box-sosialMediaBox">
+            <img src="./assets/images/sosialMedia/facebook.svg" alt="" />
+          </div>
+          <div class="joinUs__box-sosialMediaBox">
+            <img src="./assets/images/sosialMedia/instagram.svg" alt="" />
+          </div>
+          <div class="joinUs__box-sosialMediaBox">
+            <img src="./assets/images/sosialMedia/linkdin.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="contaniar">
+        <div class="footerBox">
+            <a href="index.html">
+                <img
+                class="footerBox__logo"
+                src="./assets/images/logoaz.png"
+                alt=""
+              />
+            </a>
+
+          <div class="footerBox__company">
+            <h1 class="footerBox__company-title">Müştəri Xidmətləri</h1>
+            <ul class="footerBox__company-list">
+              <li><a href="#">Haqqımızda</a></li>
+              <li><a href="#">Karyera</a></li>
+              <li><a href="#">Xəbərlər</a></li>
+            </ul>
+          </div>
+          <div class="footerBox__company">
+            <h1 class="footerBox__company-title">Satış Portalı</h1>
+            <ul class="footerBox__company-list">
+              <li><a href="#">Məhsullar</a></li>
+              <li><a href="#">Kateqoriyalar</a></li>
+            </ul>
+          </div>
+          <div class="footerBox__company">
+            <h1 class="footerBox__company-title">Satış Compony</h1>
+            <ul class="footerBox__company-list">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press </a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footerBox__company">
+            <h1 class="footerBox__company-title">Satış Compony</h1>
+            <ul class="footerBox__company-list">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press </a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footerBox__company">
+            <h1 class="footerBox__company-title">Əlaqə</h1>
+            <div class="footerBox__flex">
+              <div class="footerBox__company-sosial">
+                <img src="./assets/images/sosialMedia/facebook.svg" alt="" />
+              </div>
+              <div class="footerBox__company-sosial">
+                <img src="./assets/images/sosialMedia/instagram.svg" alt="" />
+              </div>
+              <div class="footerBox__company-sosial">
+                <img src="./assets/images/sosialMedia/linkdin.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerCopy">
+        <div class="contaniar">
+          <div class="footerCopyBox">
+            <p class="footerCopyBox__text">
+              Copyright 2020 - Bütün Hüquqlar Qorunur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

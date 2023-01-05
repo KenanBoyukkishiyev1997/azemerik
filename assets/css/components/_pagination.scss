@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 66px 0;
+    &__arrow {
+        color: #bcbcbc;
+    }
+
+    &__num {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        text-align: center;
+        margin: 0 30px;
+
+        a {
+            margin: 0 11px;
+            color: #bcbcbc;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &-active {
+            color: #609e53 !important;
+        }
+    }
+}

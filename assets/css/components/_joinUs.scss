@@ -1,0 +1,30 @@
+.joinUs {
+    background-color: #1a1b68;
+padding: 48px 0 60px;
+opacity: .7;
+    &__box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        &-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 42px;
+            color: #fff;
+        }
+
+        &-sosialMedia {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            &Box{
+                border-radius: 50%;
+                border: 1px solid #fff;
+                padding: 8px 12px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

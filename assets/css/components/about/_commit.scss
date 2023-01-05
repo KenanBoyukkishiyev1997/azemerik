@@ -1,0 +1,98 @@
+.commit {
+    position: relative;
+    margin-bottom: 60px;
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__box {
+        position: relative;
+
+        &-bg {
+            background-image: url("../../../../assets/images/about/commit.svg");
+            height: 185px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 30px;
+            margin: 0 50px 28px 0;
+            border-radius: 10px;
+        }
+        &-title {
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            margin-bottom: 16px;
+            color: #000;
+        }
+
+        &-desc {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            color: #9a9a99;
+        }
+
+        &-person {
+            display: flex;
+        }
+
+        &-img {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        &-name {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #000;
+        }
+
+        &-posotion {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        &-link {
+            font-weight: 500;
+            color: #e3472b;
+        }
+    }
+
+    @media only screen and (max-width:1200px) {
+        &__flex{
+            display: block;
+        }
+        &__box {
+margin-bottom: 20px;    
+            &-bg {
+                padding: 15px;
+                margin: 0 0 28px 0;
+                display: flex;
+                align-items: center;
+                height: auto;
+                flex-direction: column;
+            }
+
+            &-title {
+                font-family: Poppins;
+                font-size: 14px;
+            }
+    
+            &-desc {
+                font-size: 12px;
+            }
+        }
+    }
+}

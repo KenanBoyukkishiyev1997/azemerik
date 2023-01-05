@@ -1,0 +1,139 @@
+.contact {
+    position: relative;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 342px;
+            width: 2px;
+            top: 0;
+            right: -160px;
+            background: #e0e0e0;
+        }
+        &-box {
+            text-align: center;
+            margin-bottom: 40px;
+            &-icon {
+                margin-bottom: 17px;
+            }
+
+            &-text {
+                margin: 4px 0;
+                font-family: Poppins;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 25px;
+                text-align: center;
+                opacity: 0.6;
+                color: #000;
+            }
+        }
+    }
+
+    &__form {
+        &-submit {
+
+         
+            input {
+                height: 53px;
+                background: #e3472b;
+                border-radius: 2px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                cursor: pointer;
+                width: 186px;
+                margin: 0 0 0 auto;
+                border: 1px solid transparent;
+                font-family: Poppins;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 23px;
+                color: #fff;
+                padding: 15px 38px;
+            }
+        }
+        &-group {
+            display: flex;
+            &-input {
+                width: 300px;
+                margin-right: 12px;
+                
+
+                select,
+                textarea{
+                    background: linear-gradient(0deg, #f0f0f3, #f0f0f3), linear-gradient(0deg, #f6f6f6, #f6f6f6);
+                    color: black;
+                }
+
+
+            }
+        }
+
+        .bootstrap-select > .dropdown-toggle {
+            height: 48px !important;
+            border-radius: 2px;
+            background: linear-gradient(0deg, #f0f0f3, #f0f0f3), linear-gradient(0deg, #f6f6f6, #f6f6f6);
+        }
+
+        .filter-option {
+            position: relative !important;
+            top: 30% !important;
+            left: 15px !important;
+        }
+    }
+
+
+    @media only screen and (max-width: 1300px) {
+        &__form {
+            &-group {
+                &-input {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+
+    @media only screen and (max-width: 1200px) {
+        &__flex {
+          display: block;
+          
+        }
+        &__form {
+            &-submit{
+                width: 100%;
+                input{
+                    width: 100%;
+                    margin: 0  auto;
+justify-content: center;
+                }
+            }
+            &-group {
+                display: block;
+
+                .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+                    width: 100%;
+                }
+                &-input {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__info {
+            &::after {
+                content: "";
+               display: none;
+            }
+    }
+    
+}
+}

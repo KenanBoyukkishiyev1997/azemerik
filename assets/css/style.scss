@@ -1,0 +1,76 @@
+@import "./components/header/header";
+@import "./components/about/about";
+@import "./components/banner";
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/choousse";
+@import "./components/blog";
+@import "./components/joinUs";
+@import "./components/product/product";
+@import "./components/footer";
+@import "./components/responsive";
+@import "./components/headline";
+@import "./components/nav";
+@import "./components/singForm";
+@import "./components/pagination";
+@import "./components/contact";
+@import "./components/user";
+@import "./components/bucket/bucket";
+@import "./components/categorie";
+@import "./components/catalog";
+@import "./components/shop";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#map {
+    height: 307px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+.contaniar {
+    margin: 0 auto;
+}
+
+.alginCenter {
+    display: flex;
+    align-items: center;
+}
+
+.iconSvg {
+    // stroke:rgb(111, 10, 10);
+    background-color: #c5270c;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.car {
+    display: flex;
+    margin: 0 auto 0;
+    height: 70px;
+
+    &__text {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0 0;
+    }
+
+    &__link{
+        position: relative;
+        cursor: pointer;
+    }
+}

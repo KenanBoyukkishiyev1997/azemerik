@@ -1,0 +1,18 @@
+@import "./logo";
+@import "./search";
+@import "./auth";
+@import "./headerMob";
+
+.header {
+
+    position: relative;
+    margin-top: 30px;
+    height: 80px;
+    border-bottom: 1px solid #e6e5e5;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        height: 42px;
+     
+    }
+}

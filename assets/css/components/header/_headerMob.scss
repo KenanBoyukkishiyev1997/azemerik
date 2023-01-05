@@ -1,0 +1,82 @@
+.headerMob {
+    background-color: #fff;
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: 0.4s;
+    overflow-x: hidden;
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    &__list {
+        list-style: none;
+        li {
+            border-top:1px solid #999fae ;
+            border-bottom:1px solid #999fae ;
+
+            padding: 10px 25px;
+            a {
+                text-decoration: none;
+
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                color: #000;
+                line-height: 21px;
+            }
+        }
+    }
+
+    &__logo {
+        padding: 10px 25px;
+        margin: 60px auto;
+    }
+}
+
+
+.sticky {
+    position: sticky !important;
+    top: 0;
+background-color: #fff;
+    opacity: 1;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding: 0 0 5px;
+    z-index: 1001;
+    transition: .2s;
+  animation: sticky .5s forwards;
+  }
+
+  .stickynavbar {
+    position: sticky !important;
+    top: 80px;
+background-color: #fff;
+    opacity: 1;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    //padding: 0 0 50px;
+    z-index: 999;
+    transition: .2s;
+  animation: sticky .5s forwards;
+  }
+
+
+  @keyframes sticky {
+    0% {
+      transform: translatey(-200px);
+    }
+    
+    100% {
+      transform: translatey(0px);
+    }
+  }
